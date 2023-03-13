@@ -8,7 +8,7 @@
       "executor": "@create-package-json-plugin/my-plugin:create-package-json",
       "options": {
         "outputPath": "apps/my-app/dist",
-        "excludedFilesGlobs": ["mocks/**/*.*"]
+        "excludedFilesGlobs": ["dev-helpers/**/*.*"]
       },
       "outputs": ["apps/my-app/dist/package.json"]
     }
