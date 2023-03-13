@@ -1,6 +1,6 @@
 # CreatePackageJsonPlugin
 
-This workspace serves one single purpose: to show showcase a custom nx plugin to generate a package.json dynamically by usign the nx dependency graph.
+This workspace serves one single purpose: to show showcase a custom nx plugin to generate a package.json dynamically by using the nx dependency graph.
 
 Run `npx nx build my-app` for an example output in `apps/my-app/dist/package.json`.
 
