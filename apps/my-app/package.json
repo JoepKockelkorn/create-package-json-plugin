@@ -1,0 +1,13 @@
+{
+  "private": true,
+  "name": "my-app",
+  "scripts": {
+    "start": "node ./server.js"
+  },
+  "dependencies": {
+    "@swc/helpers": "<placeholder>"
+  },
+  "engines": {
+    "node": ">=14"
+  }
+}

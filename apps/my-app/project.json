@@ -1,0 +1,16 @@
+{
+  "name": "my-app",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "apps/my-app",
+  "projectType": "application",
+  "targets": {
+    "build": {
+      "executor": "@create-package-json-plugin/my-plugin:create-package-json",
+      "options": {
+        "outputPath": "apps/my-app/dist",
+        "excludedFilesGlobs": ["mocks/**/*.*"]
+      },
+      "outputs": ["apps/my-app/dist/package.json"]
+    }
+  }
+}

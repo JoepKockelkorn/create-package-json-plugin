@@ -1,0 +1,24 @@
+{
+  "$schema": "http://json-schema.org/schema",
+  "version": 2,
+  "cli": "nx",
+  "title": "CreatePackageJson executor",
+  "description": "",
+  "type": "object",
+  "properties": {
+    "outputPath": {
+      "type": "string",
+      "description": "Path where the output should be placed",
+      "$default": {
+        "$source": "argv",
+        "index": 0
+      }
+    },
+    "excludedFilesGlobs": {
+      "type": "array",
+      "items": { "type": "string" },
+      "description": "When provided, strips the dependencies that are only used in files matching these globs"
+    }
+  },
+  "required": ["outputPath"]
+}
